@@ -1,389 +1,50 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="DEYNAU – Umzug, Transport und Gebäudeservice in Deutschland.">
-  <title>DEYNAU | Umzug, Transport & Gebäudeservice</title>
-  <style>
-    :root {
-      --orange: #f47721;
-      --blue: #1769aa;
-      --dark: #172638;
-      --light: #f5f7fa;
-      --white: #ffffff;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: var(--dark);
-      background: var(--white);
-      line-height: 1.6;
-    }
-
-    header {
-      background: var(--white);
-      padding: 18px 6%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 16px;
-      flex-wrap: wrap;
-      border-bottom: 1px solid #e5eaf0;
-    }
-
-    .logo {
-      font-size: 30px;
-      font-weight: 900;
-      letter-spacing: 2px;
-      color: var(--dark);
-    }
-
-    .logo span { color: var(--orange); }
-
-    nav {
-      display: flex;
-      align-items: center;
-      gap: 18px;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      color: var(--dark);
-      text-decoration: none;
-      font-weight: 700;
-    }
-
-    .languages {
-      display: flex;
-      gap: 6px;
-    }
-
-    .languages button {
-      padding: 7px 10px;
-      border: 1px solid #d7dee7;
-      background: white;
-      border-radius: 6px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    .languages button:hover {
-      background: var(--light);
-    }
-
-    .hero {
-      padding: 76px 6%;
-      background: linear-gradient(120deg, #fff3e9, #ffffff 65%);
-    }
-
-    .hero-content {
-      max-width: 1050px;
-      margin: auto;
-    }
-
-    .eyebrow {
-      color: var(--orange);
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-
-    h1 {
-      max-width: 800px;
-      font-size: clamp(36px, 6vw, 64px);
-      line-height: 1.1;
-      margin: 14px 0 22px;
-    }
-
-    h1 span { color: var(--orange); }
-
-    .hero p {
-      max-width: 700px;
-      font-size: 19px;
-      color: #526174;
-    }
-
-    .buttons {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-top: 28px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 13px 22px;
-      border-radius: 7px;
-      text-decoration: none;
-      font-weight: 800;
-    }
-
-    .btn-orange {
-      background: var(--orange);
-      color: white;
-    }
-
-    .btn-blue {
-      background: var(--blue);
-      color: white;
-    }
-
-    section {
-      padding: 64px 6%;
-    }
-
-    .section-inner {
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .section-heading {
-      font-size: clamp(28px, 4vw, 40px);
-      margin: 0 0 10px;
-    }
-
-    .section-intro {
-      color: #596879;
-      margin-bottom: 30px;
-    }
-
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 22px;
-      margin-top: 30px;
-    }
-
-    .service {
-      padding: 30px;
-      border-radius: 14px;
-      background: var(--white);
-      box-shadow: 0 6px 28px #14263a12;
-      border: 1px solid #e7ebf0;
-    }
-
-    .service.transport { border-top: 6px solid var(--orange); }
-    .service.cleaning { border-top: 6px solid var(--blue); }
-
-    .service-icon {
-      font-size: 38px;
-    }
-
-    .service h3 {
-      font-size: 25px;
-      margin: 10px 0;
-    }
-
-    .service.transport h3 { color: var(--orange); }
-    .service.cleaning h3 { color: var(--blue); }
-
-    .contact {
-      background: var(--light);
-    }
-
-    .contact-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 18px;
-      margin-top: 28px;
-    }
-
-    .contact-card {
-      padding: 22px;
-      background: white;
-      border-radius: 10px;
-      overflow-wrap: anywhere;
-    }
-
-    .contact-card h3 { margin-top: 0; }
-
-    .contact-card a {
-      color: var(--blue);
-      font-weight: 700;
-      text-decoration: none;
-    }
-
-    footer {
-      background: var(--dark);
-      color: white;
-      padding: 28px 6%;
-      text-align: center;
-    }
-
-    footer a {
-      color: white;
-      margin: 0 8px;
-    }
-
-    @media (max-width: 600px) {
-      header { padding: 16px 5%; }
-      .hero { padding: 55px 5%; }
-      section { padding: 48px 5%; }
-      nav { gap: 12px; }
-    }
-  </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DEYNAU Transport & Gebäudeservice | Zuverlässig. Professionell. Deutschlandweit.</title>
+<meta name="description" content="DEYNAU – Ihr zuverlässiger Partner für Umzug, Transport und Gebäudeservice. Kontaktieren Sie uns per WhatsApp, Telefon oder E-Mail.">
+<meta name="theme-color" content="#102b4e">
+<meta property="og:title" content="DEYNAU Transport & Gebäudeservice"><meta property="og:description" content="Zuverlässig. Professionell. Deutschlandweit."><meta property="og:type" content="website"><meta property="og:image" content="assets/deynau-logo.png">
+<link rel="icon" type="image/png" href="assets/deynau-logo.png">
+<style>
+:root{--navy:#102b4e;--blue:#087ac2;--cyan:#12a9e8;--orange:#f47721;--green:#2fa84f;--ink:#182b40;--muted:#5e6d7c;--pale:#f3f7fb;--white:#fff;--line:#e1e8ef;--shadow:0 18px 48px rgba(16,43,78,.10)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);line-height:1.6;background:#fff}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1160px,calc(100% - 40px));margin-inline:auto}.topbar{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid rgba(225,232,239,.85)}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:11px;min-width:180px}.brand img{width:58px;height:58px;object-fit:contain}.brand-text{font-weight:900;letter-spacing:.02em;font-size:1.42rem;color:var(--navy);line-height:1}.brand-text small{display:block;font-size:.62rem;letter-spacing:.13em;color:var(--blue);margin-top:6px}.navlinks{display:flex;align-items:center;gap:24px;font-size:.92rem;font-weight:650}.navlinks a:hover{color:var(--blue)}.navright{display:flex;align-items:center;gap:12px}.langs{display:flex;gap:3px;background:var(--pale);padding:4px;border-radius:99px}.langs button{border:0;background:transparent;padding:6px 9px;border-radius:99px;font-size:.78rem;font-weight:800;color:var(--muted);cursor:pointer}.langs button.active{background:var(--navy);color:#fff}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:12px;padding:13px 18px;font-weight:800;cursor:pointer;transition:transform .18s,box-shadow .18s,background .18s}.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px #102b4e20}.btn-orange{background:var(--orange);color:#fff}.btn-blue{background:var(--navy);color:#fff}.btn-outline{border:1px solid var(--line);background:#fff;color:var(--navy)}.mobile-toggle{display:none;border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px 12px;color:var(--navy)}
+.hero{padding:74px 0 64px;overflow:hidden;background:radial-gradient(ellipse at 82% 25%,#e9f6ff 0,transparent 35%),linear-gradient(180deg,#fff 0%,#f7faff 100%)}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:44px}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--blue);font-weight:850;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase}.eyebrow:before{content:"";width:28px;height:3px;border-radius:4px;background:var(--orange)}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(2.55rem,5vw,4.5rem);line-height:1.04;letter-spacing:-.055em;color:var(--navy);margin:18px 0 20px}h1 span{color:var(--orange)}.hero p{font-size:1.12rem;color:var(--muted);max-width:540px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin:27px 0 25px}.hero-points{display:flex;gap:18px;flex-wrap:wrap;color:var(--navy);font-size:.86rem;font-weight:700}.hero-points span:before{content:"✓";display:inline-grid;place-items:center;background:#e3f5e8;color:#21843b;border-radius:50%;width:20px;height:20px;margin-right:7px}.hero-art{position:relative;min-height:390px;display:grid;place-items:center}.hero-glow{position:absolute;width:390px;height:390px;border-radius:50%;background:linear-gradient(140deg,#d9f2ff,#fff 60%,#ffe8d6);right:2%;top:0}.van-card{position:relative;width:100%;max-width:520px;padding:20px 20px 0;filter:drop-shadow(0 22px 24px rgba(16,43,78,.13));animation:float 5s ease-in-out infinite}.van-card svg{width:100%;height:auto;display:block}.mini-logo{position:absolute;width:105px;right:24%;top:43%;transform:translateY(-50%);background:#fff;border-radius:8px;padding:3px;box-shadow:0 3px 14px #102b4e12}.mini-logo img{width:100%;display:block}.float-tag{position:absolute;background:#fff;border:1px solid #e8eef4;border-radius:15px;padding:12px 15px;box-shadow:var(--shadow);font-size:.84rem;font-weight:800;color:var(--navy)}.tag-one{left:0;top:19%}.tag-two{right:0;bottom:13%}.float-tag b{display:block;color:var(--orange);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase}.section{padding:82px 0}.section.soft{background:var(--pale)}.section-head{max-width:680px;margin:0 auto 38px;text-align:center}.section-head h2{font-size:clamp(2rem,4vw,3rem);line-height:1.12;letter-spacing:-.04em;color:var(--navy);margin:13px 0}.section-head p{color:var(--muted);margin-bottom:0}.service-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.service-card{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 8px 28px rgba(16,43,78,.045);transition:transform .2s,box-shadow .2s}.service-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.service-banner{height:160px;display:flex;align-items:center;justify-content:space-between;padding:25px 30px;position:relative;overflow:hidden}.service-banner.transport{background:linear-gradient(120deg,#fff0e5,#fff8f3)}.service-banner.cleaning{background:linear-gradient(120deg,#e7f6ff,#f5fbff)}.service-banner:after{content:"";position:absolute;width:200px;height:200px;border:28px solid #ffffff80;border-radius:50%;right:-20px;top:-90px}.service-icon{font-size:3.6rem;z-index:1}.service-label{z-index:1;font-weight:900;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--navy)}.service-body{padding:27px 30px 30px}.service-body h3{font-size:1.55rem;line-height:1.2;color:var(--navy);margin-bottom:12px}.service-body p{color:var(--muted)}.service-list{list-style:none;margin:20px 0 25px;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px 15px;font-size:.92rem}.service-list li:before{content:"✓";color:var(--orange);font-weight:900;margin-right:8px}.text-link{font-weight:850;color:var(--blue)}.text-link:hover{color:var(--orange)}.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.why-card{border:1px solid var(--line);border-radius:18px;padding:25px;background:#fff}.why-icon{width:48px;height:48px;border-radius:14px;background:#e7f5ff;display:grid;place-items:center;font-size:1.4rem;margin-bottom:17px}.why-card h3{color:var(--navy);margin-bottom:8px}.why-card p{color:var(--muted);font-size:.94rem;margin-bottom:0}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:step}.step{position:relative;padding:25px;border-radius:18px;background:#fff;border:1px solid var(--line)}.step:before{counter-increment:step;content:"0" counter(step);display:block;font-size:1.9rem;font-weight:950;color:var(--orange);margin-bottom:15px}.step h3{color:var(--navy);margin-bottom:8px}.step p{color:var(--muted);margin:0}.area-band{background:var(--navy);color:#fff;border-radius:24px;padding:34px 38px;display:flex;justify-content:space-between;align-items:center;gap:25px}.area-band h2{font-size:clamp(1.7rem,3vw,2.4rem);margin:0 0 8px;letter-spacing:-.035em}.area-band p{color:#d1deeb;margin:0}.area-chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}.area-chips span{border:1px solid #ffffff35;border-radius:99px;padding:7px 12px;font-size:.82rem}.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:center}.logo-panel{border-radius:24px;background:#fff;border:1px solid var(--line);padding:24px;box-shadow:var(--shadow)}.logo-panel img{width:100%;display:block}.about-copy h2{font-size:clamp(2rem,4vw,2.8rem);line-height:1.12;letter-spacing:-.04em;color:var(--navy)}.about-copy p{color:var(--muted)}.contact-panel{display:grid;grid-template-columns:.85fr 1.15fr;gap:30px;background:#f2f7fc;border-radius:24px;padding:34px}.contact-copy h2{font-size:2.4rem;line-height:1.1;letter-spacing:-.04em;color:var(--navy)}.contact-copy p{color:var(--muted)}.contact-list{display:grid;gap:12px}.contact-item{display:flex;gap:14px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:14px;padding:15px 17px}.contact-item .ci{width:42px;height:42px;flex:0 0 42px;border-radius:12px;background:#e8f5ff;display:grid;place-items:center;font-size:1.2rem}.contact-item small{display:block;color:var(--muted);font-size:.76rem;font-weight:700}.contact-item strong{display:block;color:var(--navy);overflow-wrap:anywhere}.contact-item a:hover strong{color:var(--blue)}.socials{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.socials a{background:#fff;border:1px solid var(--line);border-radius:10px;padding:9px 13px;font-size:.87rem;font-weight:800;color:var(--navy)}.footer{background:#0b203b;color:#fff;padding:38px 0 22px}.footer-top{display:flex;align-items:center;justify-content:space-between;gap:30px;padding-bottom:28px}.footer-brand{display:flex;align-items:center;gap:13px}.footer-brand img{width:62px;height:62px;object-fit:contain;background:#fff;border-radius:12px}.footer-brand strong{font-size:1.2rem}.footer-brand small{display:block;color:#b9c9da}.footer-links{display:flex;gap:18px;flex-wrap:wrap;color:#d4dfeb;font-size:.88rem}.footer-bottom{border-top:1px solid #ffffff20;padding-top:18px;color:#aebed0;font-size:.82rem;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.modal-backdrop{position:fixed;inset:0;background:#08182bd9;display:none;align-items:center;justify-content:center;padding:20px;z-index:100}.modal-backdrop.open{display:flex}.modal{width:min(460px,100%);background:#fff;border-radius:22px;padding:28px;box-shadow:0 30px 100px #0004}.modal h2{color:var(--navy);margin-bottom:7px}.modal p{color:var(--muted)}.modal-options{display:grid;gap:10px;margin-top:20px}.modal-options a{display:flex;justify-content:space-between;align-items:center;padding:15px;border:1px solid var(--line);border-radius:13px;font-weight:800;color:var(--navy)}.modal-options a:hover{border-color:var(--green);background:#f2fbf4}.modal-close{float:right;border:0;background:var(--pale);border-radius:9px;padding:6px 10px;cursor:pointer}.legal{max-width:800px;margin:0 auto;padding:55px 0 80px}.legal h1{font-size:2.6rem}.placeholder{padding:16px;background:#fff5e8;border:1px solid #ffd8a9;border-radius:12px;color:#79450b}.legal p{color:var(--muted)}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+@media(max-width:960px){.navlinks{gap:14px}.navlinks a{font-size:.85rem}.navright .contact-nav{display:none}.hero-grid{gap:20px}.hero-art{min-height:330px}.service-list{grid-template-columns:1fr}.contact-panel{grid-template-columns:1fr}.about-grid{gap:28px}}
+@media(max-width:760px){.wrap{width:min(100% - 30px,600px)}.nav{height:72px}.brand img{width:48px;height:48px}.brand-text{font-size:1.2rem}.brand-text small{font-size:.55rem}.mobile-toggle{display:block}.navlinks{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;padding:18px 22px 24px;border-bottom:1px solid var(--line);box-shadow:0 18px 25px #102b4e0c;flex-direction:column;align-items:stretch}.navlinks.open{display:flex}.navlinks a{padding:8px 0;font-size:1rem}.navright{gap:7px}.langs button{padding:6px 7px}.hero{padding:48px 0 42px}.hero-grid{grid-template-columns:1fr}.hero-copy{text-align:center}.hero-copy .eyebrow{justify-content:center}.hero p{margin-inline:auto}.hero-actions,.hero-points{justify-content:center}.hero-art{min-height:270px;margin-top:6px}.hero-glow{width:280px;height:280px;right:calc(50% - 140px)}.van-card{max-width:430px;padding:12px}.float-tag{font-size:.72rem;padding:8px 10px}.tag-one{left:0;top:14%}.tag-two{right:0;bottom:8%}.mini-logo{width:78px}.section{padding:60px 0}.service-grid,.why-grid,.steps,.about-grid{grid-template-columns:1fr}.service-banner{height:135px}.service-body{padding:23px}.service-list{grid-template-columns:1fr 1fr}.area-band{align-items:flex-start;flex-direction:column;padding:28px}.about-grid .logo-panel{max-width:420px;margin:auto}.contact-panel{padding:24px}.contact-copy h2{font-size:2rem}.footer-top{align-items:flex-start;flex-direction:column}.footer-links{gap:12px}.section-head{margin-bottom:28px}}
+@media(max-width:390px){.brand{min-width:0;gap:6px}.brand img{width:40px;height:40px}.brand-text{font-size:1.05rem}.brand-text small{letter-spacing:.08em}.langs button{font-size:.7rem;padding:5px}.hero-actions .btn{width:100%}.service-list{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
-
-<header>
-  <div class="logo">DEYNAU<span>.</span></div>
-  <nav>
-    <a href="#services" data-de="Leistungen" data-tr="Hizmetler" data-en="Services">Leistungen</a>
-    <a href="#contact" data-de="Kontakt" data-tr="İletişim" data-en="Contact">Kontakt</a>
-    <div class="languages">
-      <button type="button" onclick="setLanguage('de')">DE</button>
-      <button type="button" onclick="setLanguage('tr')">TR</button>
-      <button type="button" onclick="setLanguage('en')">EN</button>
-    </div>
-  </nav>
-</header>
-
+<header class="topbar"><div class="wrap nav">
+<a class="brand" href="#start" aria-label="DEYNAU Startseite"><img src="assets/deynau-logo.png" alt="DEYNAU Logo"><span class="brand-text">DEYNAU<small>TRANSPORT & SERVICE</small></span></a>
+<nav class="navlinks" id="navlinks" aria-label="Hauptnavigation"><a href="#start" data-i18n="navStart">Startseite</a><a href="#transport" data-i18n="navTransport">Umzug & Transport</a><a href="#service" data-i18n="navService">Gebäudeservice</a><a href="#about" data-i18n="navAbout">Über uns</a><a href="#contact" data-i18n="navContact">Kontakt</a></nav>
+<div class="navright"><div class="langs" aria-label="Sprache auswählen"><button class="active" data-lang="de" aria-label="Deutsch">DE</button><button data-lang="tr" aria-label="Türkçe">TR</button><button data-lang="en" aria-label="English">EN</button></div><a class="btn btn-orange contact-nav" href="#contact" data-i18n="navCta">Kontakt</a><button class="mobile-toggle" id="mobileToggle" aria-label="Menü öffnen" aria-expanded="false">☰</button></div>
+</div></header>
 <main>
-  <section class="hero">
-    <div class="hero-content">
-      <div class="eyebrow" data-de="Zuverlässig. Flexibel. Professionell."
-           data-tr="Güvenilir. Esnek. Profesyonel."
-           data-en="Reliable. Flexible. Professional.">
-        Zuverlässig. Flexibel. Professionell.
-      </div>
-      <h1 data-de-html="Ihr Partner für <span>Umzug & Transport</span>"
-           data-tr-html="<span>Taşınma ve Nakliye</span> için güvenilir çözüm ortağınız"
-           data-en-html="Your partner for <span>Moving & Transport</span>">
-        Ihr Partner für <span>Umzug & Transport</span>
-      </h1>
-      <p data-de="DEYNAU unterstützt Sie mit Transportlösungen und zuverlässigem Gebäudeservice. Kontaktieren Sie uns für Ihre Anfrage."
-         data-tr="DEYNAU, nakliye çözümleri ve güvenilir bina hizmetleriyle yanınızda. Talepleriniz için bizimle iletişime geçin."
-         data-en="DEYNAU supports you with transport solutions and reliable building services. Contact us for your enquiry.">
-        DEYNAU unterstützt Sie mit Transportlösungen und zuverlässigem Gebäudeservice. Kontaktieren Sie uns für Ihre Anfrage.
-      </p>
-      <div class="buttons">
-        <a class="btn btn-orange" href="#contact"
-           data-de="Transport anfragen" data-tr="Nakliye için iletişim" data-en="Request transport">
-          Transport anfragen
-        </a>
-        <a class="btn btn-blue" href="#services"
-           data-de="Unsere Leistungen" data-tr="Hizmetlerimiz" data-en="Our services">
-          Unsere Leistungen
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section id="services">
-    <div class="section-inner">
-      <h2 class="section-heading" data-de="Unsere Leistungen" data-tr="Hizmetlerimiz" data-en="Our Services">
-        Unsere Leistungen
-      </h2>
-      <p class="section-intro"
-         data-de="Praktische Lösungen für Privat- und Geschäftskunden."
-         data-tr="Bireysel ve kurumsal müşteriler için pratik çözümler."
-         data-en="Practical solutions for private and business customers.">
-        Praktische Lösungen für Privat- und Geschäftskunden.
-      </p>
-
-      <div class="services">
-        <article class="service transport">
-          <div class="service-icon">🚚</div>
-          <h3 data-de="Umzug & Transport" data-tr="Taşınma ve Nakliye" data-en="Moving & Transport">
-            Umzug & Transport
-          </h3>
-          <p data-de="Transportlösungen für Ihre Anforderungen. Sprechen Sie mit uns über Ihren Auftrag und den gewünschten Termin."
-             data-tr="İhtiyaçlarınıza uygun nakliye çözümleri. İşinizi ve istediğiniz tarihi görüşmek için bizimle iletişime geçin."
-             data-en="Transport solutions tailored to your needs. Contact us to discuss your job and preferred date.">
-            Transportlösungen für Ihre Anforderungen. Sprechen Sie mit uns über Ihren Auftrag und den gewünschten Termin.
-          </p>
-          <a class="btn btn-orange" href="https://wa.me/4917631322062"
-             data-de="Jetzt anfragen" data-tr="Şimdi bilgi alın" data-en="Enquire now">
-            Jetzt anfragen
-          </a>
-        </article>
-
-        <article class="service cleaning">
-          <div class="service-icon">🧹</div>
-          <h3 data-de="Gebäudeservice" data-tr="Bina ve Temizlik Hizmetleri" data-en="Building Services">
-            Gebäudeservice
-          </h3>
-          <p data-de="Zuverlässige Unterstützung rund um die Gebäudepflege. Kontaktieren Sie uns für weitere Informationen."
-             data-tr="Bina bakımı ve temizlik hizmetlerinde güvenilir destek. Ayrıntılı bilgi için bize ulaşın."
-             data-en="Reliable support for building care and cleaning. Contact us for more information.">
-            Zuverlässige Unterstützung rund um die Gebäudepflege. Kontaktieren Sie uns für weitere Informationen.
-          </p>
-          <a class="btn btn-blue" href="https://wa.me/4917670866895"
-             data-de="Kontakt aufnehmen" data-tr="İletişime geçin" data-en="Contact us">
-            Kontakt aufnehmen
-          </a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <div class="section-inner">
-      <h2 class="section-heading" data-de="Kontaktieren Sie uns" data-tr="Bizimle iletişime geçin" data-en="Contact Us">
-        Kontaktieren Sie uns
-      </h2>
-      <p class="section-intro"
-         data-de="Wir freuen uns auf Ihre Nachricht."
-         data-tr="Mesajınızı bekliyoruz."
-         data-en="We look forward to hearing from you.">
-        Wir freuen uns auf Ihre Nachricht.
-      </p>
-
-      <div class="contact-grid">
-        <div class="contact-card">
-          <h3>📞 <span data-de="Telefon" data-tr="Telefon" data-en="Phone">Telefon</span></h3>
-          <p><a href="tel:+4917631322062">+49 176 31322062</a></p>
-          <p><a href="tel:+4917670866895">+49 176 70866895</a></p>
-        </div>
-
-        <div class="contact-card">
-          <h3>💬 WhatsApp</h3>
-          <p><a href="https://wa.me/4917631322062">+49 176 31322062</a></p>
-          <p><a href="https://wa.me/4917670866895">+49 176 70866895</a></p>
-        </div>
-
-        <div class="contact-card">
-          <h3>✉️ <span data-de="E-Mail" data-tr="E-posta" data-en="Email">E-Mail</span></h3>
-          <p><a href="mailto:deynau.services@gmail.com">deynau.services@gmail.com</a></p>
-        </div>
-
-        <div class="contact-card">
-          <h3>🌐 Social Media</h3>
-          <p><a href="https://www.facebook.com/profile.php?id=61595942998696" target="_blank" rel="noopener noreferrer">Facebook</a></p>
-          <p><a href="https://www.instagram.com/deynau.service/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
-        </div>
-      </div>
-    </div>
-  </section>
+<section class="hero" id="start"><div class="wrap hero-grid"><div class="hero-copy"><div class="eyebrow" data-i18n="heroEyebrow">Ihr Partner für Transport & Gebäudeservice</div><h1 data-i18n-html="heroTitle">Zuverlässig.<br>Professionell.<br><span>Deutschlandweit.</span></h1><p data-i18n="heroText">Ob Umzug, Transport oder Gebäudereinigung – DEYNAU unterstützt Sie zuverlässig und professionell. Wir kümmern uns um die Arbeit, damit Sie sich auf das Wesentliche konzentrieren können.</p><div class="hero-actions"><button class="btn btn-orange" data-whatsapp data-i18n="heroCta">Jetzt per WhatsApp anfragen <span>↗</span></button><a class="btn btn-outline" href="#services" data-i18n="heroServices">Unsere Leistungen ↓</a></div><div class="hero-points"><span data-i18n="heroPoint1">Persönlicher Kontakt</span><span data-i18n="heroPoint2">Flexible Lösungen</span></div></div>
+<div class="hero-art" aria-label="Illustration eines DEYNAU Transporters"><div class="hero-glow"></div><div class="float-tag tag-one"><b data-i18n="tagOneTop">Ein Ansprechpartner</b><span data-i18n="tagOneBottom">Viele Lösungen</span></div><div class="van-card"><svg viewBox="0 0 600 360" role="img" aria-label="Weißer Transporter mit blauen und orangenen Details"><defs><linearGradient id="body" x1="0" x2="0.1" y1="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#e9eff5"/></linearGradient><linearGradient id="blue" x1="0" x2="1"><stop stop-color="#07539c"/><stop offset="1" stop-color="#12a9e8"/></linearGradient></defs><ellipse cx="300" cy="313" rx="240" ry="22" fill="#102b4e" opacity=".12"/><path d="M70 95 Q70 75 95 75 H385 Q411 75 428 101 L492 187 Q501 199 501 216 V273 Q501 291 482 291 H95 Q70 291 70 266Z" fill="url(#body)" stroke="#c8d4df" stroke-width="3"/><path d="M409 98 Q419 100 428 114 L477 181 H399 V110 Q399 99 409 98Z" fill="#c9eaff" stroke="#a7cce5" stroke-width="2"/><path d="M91 93 H373 Q390 93 390 111 V188 H91Z" fill="#fff"/><path d="M70 222 H500 V263 Q500 291 478 291 H95 Q70 291 70 266Z" fill="url(#blue)"/><path d="M399 196 H494 V217 H399Z" fill="#f47721"/><path d="M87 111 H378 V179 H87Z" fill="#f7fbff"/><path d="M98 204 H375" stroke="#dbe5ee" stroke-width="3"/><circle cx="164" cy="285" r="38" fill="#182b40"/><circle cx="164" cy="285" r="21" fill="#dce5ee"/><circle cx="164" cy="285" r="10" fill="#8798aa"/><circle cx="427" cy="285" r="38" fill="#182b40"/><circle cx="427" cy="285" r="21" fill="#dce5ee"/><circle cx="427" cy="285" r="10" fill="#8798aa"/><rect x="476" y="230" width="17" height="31" rx="5" fill="#f9c34c"/><path d="M101 236 H385" stroke="#fff" stroke-width="4" opacity=".75"/><path d="M103 247 H300" stroke="#fff" stroke-width="2" stroke-dasharray="12 12" opacity=".6"/></svg><div class="mini-logo"><img src="assets/deynau-logo.png" alt="DEYNAU"></div></div><div class="float-tag tag-two"><b data-i18n="tagTwoTop">Transport & Service</b><span data-i18n="tagTwoBottom">Aus einer Hand</span></div></div></div></section>
+<section class="section" id="services"><div class="wrap"><div class="section-head"><div class="eyebrow" data-i18n="servicesEyebrow">Was wir für Sie tun</div><h2 data-i18n="servicesTitle">Zwei Bereiche. Ein zuverlässiger Partner.</h2><p data-i18n="servicesIntro">Praktische Unterstützung für Privatpersonen und Unternehmen – abgestimmt auf Ihren Bedarf.</p></div><div class="service-grid">
+<article class="service-card" id="transport"><div class="service-banner transport"><span class="service-label" data-i18n="transportLabel">Mobil & zuverlässig</span><span class="service-icon" aria-hidden="true">🚚</span></div><div class="service-body"><h3 data-i18n="transportTitle">Umzug & Transport</h3><p data-i18n="transportText">Sorgfältige Unterstützung bei Umzügen, Möbeltransporten und Lieferungen – für private und geschäftliche Anliegen.</p><ul class="service-list"><li data-i18n="transport1">Umzüge</li><li data-i18n="transport2">Waren- & Gütertransport</li><li data-i18n="transport3">Möbeltransport</li><li data-i18n="transport4">Kleintransporte & Lieferungen</li><li data-i18n="transport5">Transport für Unternehmen</li></ul><button class="text-link" data-whatsapp data-i18n="askTransport">Transport anfragen ↗</button></div></article>
+<article class="service-card" id="service"><div class="service-banner cleaning"><span class="service-label" data-i18n="cleanLabel">Sauber & gepflegt</span><span class="service-icon" aria-hidden="true">✨</span></div><div class="service-body"><h3 data-i18n="cleanTitle">Gebäudeservice</h3><p data-i18n="cleanText">Für gepflegte Räume und einen guten Eindruck – zuverlässig geplant und sorgfältig ausgeführt.</p><ul class="service-list"><li data-i18n="clean1">Wohnungs- & Hausreinigung</li><li data-i18n="clean2">Büro- & Geschäftsreinigung</li><li data-i18n="clean3">Fenster- & Glasreinigung</li><li data-i18n="clean4">Treppenhausreinigung</li><li data-i18n="clean5">Grund- & Umzugsreinigung</li></ul><button class="text-link" data-whatsapp data-i18n="askClean">Gebäudeservice anfragen ↗</button></div></article>
+</div></div></section>
+<section class="section soft"><div class="wrap"><div class="section-head"><div class="eyebrow" data-i18n="whyEyebrow">Darauf können Sie zählen</div><h2 data-i18n="whyTitle">Warum DEYNAU?</h2><p data-i18n="whyIntro">Klare Kommunikation, sorgfältige Arbeit und Lösungen, die zu Ihrem Auftrag passen.</p></div><div class="why-grid"><article class="why-card"><div class="why-icon">🤝</div><h3 data-i18n="why1Title">Persönlich & direkt</h3><p data-i18n="why1Text">Sie erreichen uns unkompliziert per Telefon, E-Mail oder WhatsApp.</p></article><article class="why-card"><div class="why-icon">🧭</div><h3 data-i18n="why2Title">Flexibel geplant</h3><p data-i18n="why2Text">Wir besprechen Ihren Bedarf und stimmen den Ablauf mit Ihnen ab.</p></article><article class="why-card"><div class="why-icon">✓</div><h3 data-i18n="why3Title">Sorgfältig umgesetzt</h3><p data-i18n="why3Text">Wir legen Wert auf einen professionellen Umgang mit Ihrem Auftrag und Ihrem Eigentum.</p></article></div></div></section>
+<section class="section"><div class="wrap"><div class="section-head"><div class="eyebrow" data-i18n="processEyebrow">Einfach und unkompliziert</div><h2 data-i18n="processTitle">Wie arbeiten wir?</h2></div><div class="steps"><article class="step"><h3 data-i18n="step1Title">Kontakt aufnehmen</h3><p data-i18n="step1Text">Schreiben Sie uns, was Sie benötigen und wo der Auftrag stattfinden soll.</p></article><article class="step"><h3 data-i18n="step2Title">Bedarf besprechen</h3><p data-i18n="step2Text">Wir klären die Einzelheiten und besprechen gemeinsam die nächsten Schritte.</p></article><article class="step"><h3 data-i18n="step3Title">Auftrag abstimmen</h3><p data-i18n="step3Text">Sie erhalten eine persönliche Rückmeldung zur weiteren Planung.</p></article></div></div></section>
+<section class="section soft"><div class="wrap"><div class="area-band"><div><div class="eyebrow" style="color:#8edbff" data-i18n="areaEyebrow">Unser Einsatzgebiet</div><h2 data-i18n="areaTitle">In Ihrer Nähe – und darüber hinaus.</h2><p data-i18n="areaText">Umzug & Transport deutschlandweit · Gebäudeservice in Berlin.</p><div class="area-chips"><span data-i18n="areaChip1">Deutschlandweiter Transport</span><span data-i18n="areaChip2">Gebäudeservice Berlin</span></div></div><a class="btn btn-orange" href="#contact" data-i18n="areaCta">Kontakt aufnehmen ↗</a></div></div></section>
+<section class="section" id="about"><div class="wrap about-grid"><div class="logo-panel"><img src="assets/deynau-logo.png" alt="DEYNAU Dienstleistungen – Alles aus einer Hand"></div><div class="about-copy"><div class="eyebrow" data-i18n="aboutEyebrow">DEYNAU Dienstleistungen</div><h2 data-i18n="aboutTitle">Alles aus einer Hand.</h2><p data-i18n="aboutText">DEYNAU verbindet Transport und Gebäudeservice unter einem Dach. Unser Ziel ist es, Ihnen die Organisation zu erleichtern – mit persönlicher Kommunikation, klarer Abstimmung und zuverlässiger Unterstützung.</p><p data-i18n="aboutText2">Ob einzelne Lieferung, Umzug oder Reinigung: Teilen Sie uns mit, was Sie vorhaben. Wir besprechen mit Ihnen die passende Lösung.</p><a class="btn btn-blue" href="#contact" data-i18n="aboutCta">Lernen Sie uns kennen ↗</a></div></div></section>
+<section class="section soft" id="contact"><div class="wrap"><div class="contact-panel"><div class="contact-copy"><div class="eyebrow" data-i18n="contactEyebrow">Wir sind für Sie da</div><h2 data-i18n="contactTitle">Sprechen wir über Ihr Vorhaben.</h2><p data-i18n="contactText">Kontaktieren Sie uns direkt. Wir freuen uns auf Ihre Anfrage und melden uns bei Ihnen zurück.</p><div class="socials"><a href="https://www.instagram.com/deynau.service/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://www.facebook.com/profile.php?id=61595942998696" target="_blank" rel="noopener noreferrer">Facebook ↗</a></div></div><div class="contact-list"><a class="contact-item" href="tel:+4917631322062"><span class="ci">☎</span><span><small data-i18n="phoneLabel1">Telefon 1</small><strong>+49 176 31322062</strong></span></a><a class="contact-item" href="tel:+4917670866895"><span class="ci">☎</span><span><small data-i18n="phoneLabel2">Telefon 2</small><strong>+49 176 70866895</strong></span></a><a class="contact-item" href="mailto:deynau.services@gmail.com"><span class="ci">✉</span><span><small>E-Mail</small><strong>deynau.services@gmail.com</strong></span></a><button class="contact-item" data-whatsapp style="text-align:left;cursor:pointer;width:100%"><span class="ci">◉</span><span><small>WhatsApp</small><strong data-i18n="whatsappLabel">Nachricht senden und Nummer auswählen</strong></span></button></div></div></div></section>
 </main>
-
-<footer>
-  <div><strong>DEYNAU</strong> — Umzug, Transport & Gebäudeservice</div>
-  <p>© <span id="year"></span> DEYNAU. <span data-de="Alle Rechte vorbehalten." data-tr="Tüm hakları saklıdır." data-en="All rights reserved.">Alle Rechte vorbehalten.</span></p>
-  <a href="https://www.facebook.com/profile.php?id=61595942998696" target="_blank" rel="noopener noreferrer">Facebook</a>
-  <a href="https://www.instagram.com/deynau.service/" target="_blank" rel="noopener noreferrer">Instagram</a>
-</footer>
-
+<footer class="footer"><div class="wrap"><div class="footer-top"><div class="footer-brand"><img src="assets/deynau-logo.png" alt="DEYNAU Logo"><div><strong>DEYNAU</strong><small data-i18n="footerTag">Transport & Gebäudeservice</small></div></div><div class="footer-links"><a href="#start" data-i18n="navStart">Startseite</a><a href="#transport" data-i18n="navTransport">Umzug & Transport</a><a href="#service" data-i18n="navService">Gebäudeservice</a><a href="impressum.html" data-i18n="imprint">Impressum</a><a href="datenschutz.html" data-i18n="privacy">Datenschutzerklärung</a></div></div><div class="footer-bottom"><span>© <span id="year"></span> DEYNAU. <span data-i18n="rights">Alle Rechte vorbehalten.</span></span><span data-i18n="slogan">Zuverlässig. Professionell. Deutschlandweit.</span></div></div></footer>
+<div class="modal-backdrop" id="waModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal"><button class="modal-close" id="modalClose" aria-label="Schließen">✕</button><h2 id="modalTitle" data-i18n="modalTitle">Wie möchten Sie uns kontaktieren?</h2><p data-i18n="modalText">Wählen Sie die WhatsApp-Nummer, die Sie verwenden möchten.</p><div class="modal-options"><a id="waOne" href="#" target="_blank" rel="noopener noreferrer"><span>+49 176 31322062</span><span>WhatsApp ↗</span></a><a id="waTwo" href="#" target="_blank" rel="noopener noreferrer"><span>+49 176 70866895</span><span>WhatsApp ↗</span></a></div></div></div>
 <script>
-  function setLanguage(language) {
-    document.documentElement.lang = language;
-
-    document.querySelectorAll('[data-' + language + ']').forEach(function (element) {
-      element.textContent = element.getAttribute('data-' + language);
-    });
-
-    document.querySelectorAll('[data-' + language + '-html]').forEach(function (element) {
-      element.innerHTML = element.getAttribute('data-' + language + '-html');
-    });
-  }
-
-  document.getElementById('year').textContent = new Date().getFullYear();
+const translations={
+de:{navStart:'Startseite',navTransport:'Umzug & Transport',navService:'Gebäudeservice',navAbout:'Über uns',navContact:'Kontakt',navCta:'Kontakt',heroEyebrow:'Ihr Partner für Transport & Gebäudeservice',heroTitle:'Zuverlässig.<br>Professionell.<br><span>Deutschlandweit.</span>',heroText:'Ob Umzug, Transport oder Gebäudereinigung – DEYNAU unterstützt Sie zuverlässig und professionell. Wir kümmern uns um die Arbeit, damit Sie sich auf das Wesentliche konzentrieren können.',heroCta:'Jetzt per WhatsApp anfragen ↗',heroServices:'Unsere Leistungen ↓',heroPoint1:'Persönlicher Kontakt',heroPoint2:'Flexible Lösungen',tagOneTop:'Ein Ansprechpartner',tagOneBottom:'Viele Lösungen',tagTwoTop:'Transport & Service',tagTwoBottom:'Aus einer Hand',servicesEyebrow:'Was wir für Sie tun',servicesTitle:'Zwei Bereiche. Ein zuverlässiger Partner.',servicesIntro:'Praktische Unterstützung für Privatpersonen und Unternehmen – abgestimmt auf Ihren Bedarf.',transportLabel:'Mobil & zuverlässig',transportTitle:'Umzug & Transport',transportText:'Sorgfältige Unterstützung bei Umzügen, Möbeltransporten und Lieferungen – für private und geschäftliche Anliegen.',transport1:'Umzüge',transport2:'Waren- & Gütertransport',transport3:'Möbeltransport',transport4:'Kleintransporte & Lieferungen',transport5:'Transport für Unternehmen',askTransport:'Transport anfragen ↗',cleanLabel:'Sauber & gepflegt',cleanTitle:'Gebäudeservice',cleanText:'Für gepflegte Räume und einen guten Eindruck – zuverlässig geplant und sorgfältig ausgeführt.',clean1:'Wohnungs- & Hausreinigung',clean2:'Büro- & Geschäftsreinigung',clean3:'Fenster- & Glasreinigung',clean4:'Treppenhausreinigung',clean5:'Grund- & Umzugsreinigung',askClean:'Gebäudeservice anfragen ↗',whyEyebrow:'Darauf können Sie zählen',whyTitle:'Warum DEYNAU?',whyIntro:'Klare Kommunikation, sorgfältige Arbeit und Lösungen, die zu Ihrem Auftrag passen.',why1Title:'Persönlich & direkt',why1Text:'Sie erreichen uns unkompliziert per Telefon, E-Mail oder WhatsApp.',why2Title:'Flexibel geplant',why2Text:'Wir besprechen Ihren Bedarf und stimmen den Ablauf mit Ihnen ab.',why3Title:'Sorgfältig umgesetzt',why3Text:'Wir legen Wert auf einen professionellen Umgang mit Ihrem Auftrag und Ihrem Eigentum.',processEyebrow:'Einfach und unkompliziert',processTitle:'Wie arbeiten wir?',step1Title:'Kontakt aufnehmen',step1Text:'Schreiben Sie uns, was Sie benötigen und wo der Auftrag stattfinden soll.',step2Title:'Bedarf besprechen',step2Text:'Wir klären die Einzelheiten und besprechen gemeinsam die nächsten Schritte.',step3Title:'Auftrag abstimmen',step3Text:'Sie erhalten eine persönliche Rückmeldung zur weiteren Planung.',areaEyebrow:'Unser Einsatzgebiet',areaTitle:'In Ihrer Nähe – und darüber hinaus.',areaText:'Umzug & Transport deutschlandweit · Gebäudeservice in Berlin.',areaChip1:'Deutschlandweiter Transport',areaChip2:'Gebäudeservice Berlin',areaCta:'Kontakt aufnehmen ↗',aboutEyebrow:'DEYNAU Dienstleistungen',aboutTitle:'Alles aus einer Hand.',aboutText:'DEYNAU verbindet Transport und Gebäudeservice unter einem Dach. Unser Ziel ist es, Ihnen die Organisation zu erleichtern – mit persönlicher Kommunikation, klarer Abstimmung und zuverlässiger Unterstützung.',aboutText2:'Ob einzelne Lieferung, Umzug oder Reinigung: Teilen Sie uns mit, was Sie vorhaben. Wir besprechen mit Ihnen die passende Lösung.',aboutCta:'Lernen Sie uns kennen ↗',contactEyebrow:'Wir sind für Sie da',contactTitle:'Sprechen wir über Ihr Vorhaben.',contactText:'Kontaktieren Sie uns direkt. Wir freuen uns auf Ihre Anfrage und melden uns bei Ihnen zurück.',phoneLabel1:'Telefon 1',phoneLabel2:'Telefon 2',whatsappLabel:'Nachricht senden und Nummer auswählen',footerTag:'Transport & Gebäudeservice',imprint:'Impressum',privacy:'Datenschutzerklärung',rights:'Alle Rechte vorbehalten.',slogan:'Zuverlässig. Professionell. Deutschlandweit.',modalTitle:'Wie möchten Sie uns kontaktieren?',modalText:'Wählen Sie die WhatsApp-Nummer, die Sie verwenden möchten.'},
+tr:{navStart:'Ana Sayfa',navTransport:'Taşınma ve Nakliye',navService:'Bina Hizmetleri',navAbout:'Hakkımızda',navContact:'İletişim',navCta:'İletişim',heroEyebrow:'Nakliye ve bina hizmetlerinde çözüm ortağınız',heroTitle:'Güvenilir.<br>Profesyonel.<br><span>Almanya genelinde.</span>',heroText:'Taşınma, nakliye veya bina temizliği için DEYNAU güvenilir ve profesyonel destek sunar. Siz önemli işlerinize odaklanırken biz hizmetiniz için çalışırız.',heroCta:'WhatsApp ile iletişime geç ↗',heroServices:'Hizmetlerimiz ↓',heroPoint1:'Doğrudan iletişim',heroPoint2:'Esnek çözümler',tagOneTop:'Tek muhatap',tagOneBottom:'Birçok çözüm',tagTwoTop:'Nakliye ve hizmet',tagTwoBottom:'Her şey tek elden',servicesEyebrow:'Sizin için neler yapıyoruz',servicesTitle:'İki hizmet alanı. Tek güvenilir ortak.',servicesIntro:'İhtiyacınıza göre bireylere ve işletmelere pratik destek.',transportLabel:'Hareketli ve güvenilir',transportTitle:'Taşınma ve Nakliye',transportText:'Ev taşıma, mobilya nakliyesi ve teslimatlarda bireysel ve ticari ihtiyaçlara uygun özenli destek.',transport1:'Ev ve iş yeri taşımacılığı',transport2:'Eşya ve yük nakliyesi',transport3:'Mobilya nakliyesi',transport4:'Küçük nakliye ve teslimatlar',transport5:'Şirketler için nakliye',askTransport:'Nakliye için sor ↗',cleanLabel:'Temiz ve bakımlı',cleanTitle:'Bina Hizmetleri',cleanText:'Bakımlı mekânlar ve iyi bir izlenim için planlı ve özenli hizmet.',clean1:'Ev ve daire temizliği',clean2:'Ofis ve iş yeri temizliği',clean3:'Pencere ve cam temizliği',clean4:'Merdiven boşluğu temizliği',clean5:'Detaylı ve taşınma sonrası temizlik',askClean:'Bina hizmeti sor ↗',whyEyebrow:'Güvenebileceğiniz hizmet',whyTitle:'Neden DEYNAU?',whyIntro:'Açık iletişim, özenli çalışma ve ihtiyacınıza uygun çözümler.',why1Title:'Doğrudan iletişim',why1Text:'Bize telefon, e-posta veya WhatsApp üzerinden kolayca ulaşabilirsiniz.',why2Title:'Esnek planlama',why2Text:'İhtiyacınızı görüşür, işin akışını birlikte planlarız.',why3Title:'Özenli çalışma',why3Text:'İşinize ve eşyalarınıza profesyonel ve dikkatli yaklaşırız.',processEyebrow:'Kolay ve pratik',processTitle:'Nasıl çalışıyoruz?',step1Title:'İletişime geçin',step1Text:'İhtiyacınızı ve hizmetin nerede yapılacağını bize yazın.',step2Title:'Detayları görüşelim',step2Text:'Ayrıntıları netleştirip sonraki adımları birlikte belirleyelim.',step3Title:'Planı netleştirelim',step3Text:'Sonraki planlama için size doğrudan geri dönüş yapalım.',areaEyebrow:'Hizmet bölgemiz',areaTitle:'Yakınınızda ve daha geniş bölgelerde.',areaText:'Taşınma ve nakliye Almanya genelinde · Bina hizmetleri Berlin’de.',areaChip1:'Almanya genelinde nakliye',areaChip2:'Berlin’de bina hizmetleri',areaCta:'İletişime geç ↗',aboutEyebrow:'DEYNAU Hizmetleri',aboutTitle:'Her şey tek elden.',aboutText:'DEYNAU, nakliye ve bina hizmetlerini tek çatı altında bir araya getirir. Amacımız; doğrudan iletişim, açık planlama ve güvenilir destekle işlerinizi kolaylaştırmaktır.',aboutText2:'Tek bir teslimat, taşınma veya temizlik olsun; ihtiyacınızı bize anlatın, size uygun çözümü birlikte değerlendirelim.',aboutCta:'Bizi daha yakından tanıyın ↗',contactEyebrow:'Size yardımcı olmak için buradayız',contactTitle:'Planınızı birlikte konuşalım.',contactText:'Bize doğrudan ulaşın. Talebinizi memnuniyetle değerlendirip size geri dönüş yaparız.',phoneLabel1:'Telefon 1',phoneLabel2:'Telefon 2',whatsappLabel:'Mesaj gönderin ve numara seçin',footerTag:'Nakliye ve Bina Hizmetleri',imprint:'Yasal Bilgiler (Impressum)',privacy:'Gizlilik Politikası',rights:'Tüm hakları saklıdır.',slogan:'Güvenilir. Profesyonel. Almanya genelinde.',modalTitle:'Bize nasıl ulaşmak istersiniz?',modalText:'Kullanmak istediğiniz WhatsApp numarasını seçin.'},
+en:{navStart:'Home',navTransport:'Moving & Transport',navService:'Building Services',navAbout:'About us',navContact:'Contact',navCta:'Contact',heroEyebrow:'Your partner for transport & building services',heroTitle:'Reliable.<br>Professional.<br><span>Across Germany.</span>',heroText:'Whether you need a move, transport or building cleaning, DEYNAU offers reliable, professional support. We take care of the work so you can focus on what matters.',heroCta:'Enquire via WhatsApp ↗',heroServices:'Our services ↓',heroPoint1:'Direct communication',heroPoint2:'Flexible solutions',tagOneTop:'One point of contact',tagOneBottom:'Many solutions',tagTwoTop:'Transport & service',tagTwoBottom:'All in one place',servicesEyebrow:'How we can help',servicesTitle:'Two service areas. One reliable partner.',servicesIntro:'Practical support for individuals and businesses, tailored to your needs.',transportLabel:'Mobile & reliable',transportTitle:'Moving & Transport',transportText:'Careful support with moves, furniture transport and deliveries for private and business needs.',transport1:'Home and office moves',transport2:'Goods and cargo transport',transport3:'Furniture transport',transport4:'Small transports & deliveries',transport5:'Transport for businesses',askTransport:'Ask about transport ↗',cleanLabel:'Clean & cared for',cleanTitle:'Building Services',cleanText:'Well-maintained spaces and a great impression, delivered with care and reliable planning.',clean1:'Home and apartment cleaning',clean2:'Office and commercial cleaning',clean3:'Window and glass cleaning',clean4:'Stairwell cleaning',clean5:'Deep and end-of-tenancy cleaning',askClean:'Ask about building services ↗',whyEyebrow:'What you can count on',whyTitle:'Why DEYNAU?',whyIntro:'Clear communication, careful work and solutions suited to your job.',why1Title:'Personal & direct',why1Text:'Reach us easily by phone, email or WhatsApp.',why2Title:'Flexible planning',why2Text:'We discuss your needs and agree on the process with you.',why3Title:'Carefully delivered',why3Text:'We treat your task and your property with professional care.',processEyebrow:'Simple and straightforward',processTitle:'How do we work?',step1Title:'Get in touch',step1Text:'Tell us what you need and where the service is required.',step2Title:'Discuss the details',step2Text:'We clarify the details and agree on the next steps together.',step3Title:'Confirm the plan',step3Text:'We get back to you personally to discuss the arrangements.',areaEyebrow:'Where we work',areaTitle:'Near you – and beyond.',areaText:'Moving & transport throughout Germany · Building services in Berlin.',areaChip1:'Transport across Germany',areaChip2:'Building services in Berlin',areaCta:'Get in touch ↗',aboutEyebrow:'DEYNAU Services',aboutTitle:'Everything from one source.',aboutText:'DEYNAU brings transport and building services together. Our goal is to make arrangements easier through direct communication, clear planning and reliable support.',aboutText2:'From a single delivery to a move or cleaning, tell us what you need and we will discuss a suitable solution.',aboutCta:'Get to know us ↗',contactEyebrow:'We are here to help',contactTitle:'Let’s discuss your plans.',contactText:'Contact us directly. We look forward to your enquiry and will get back to you.',phoneLabel1:'Phone 1',phoneLabel2:'Phone 2',whatsappLabel:'Send a message and choose a number',footerTag:'Transport & Building Services',imprint:'Legal notice',privacy:'Privacy policy',rights:'All rights reserved.',slogan:'Reliable. Professional. Across Germany.',modalTitle:'How would you like to contact us?',modalText:'Choose the WhatsApp number you would like to use.'}}
+function setLanguage(lang){const dict=translations[lang]||translations.de;document.documentElement.lang=lang;document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.dataset.i18n;if(dict[k]!==undefined)el.textContent=dict[k]});document.querySelectorAll('[data-i18n-html]').forEach(el=>{const k=el.dataset.i18nHtml;if(dict[k]!==undefined)el.innerHTML=dict[k]});document.querySelectorAll('[data-lang]').forEach(b=>{b.classList.toggle('active',b.dataset.lang===lang);b.setAttribute('aria-pressed',b.dataset.lang===lang?'true':'false')});try{sessionStorage.setItem('deynau-lang',lang)}catch(e){}}
+document.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>setLanguage(b.dataset.lang)));document.getElementById('year').textContent=new Date().getFullYear();const mobileToggle=document.getElementById('mobileToggle'),navlinks=document.getElementById('navlinks');mobileToggle.addEventListener('click',()=>{const open=navlinks.classList.toggle('open');mobileToggle.setAttribute('aria-expanded',String(open));mobileToggle.textContent=open?'✕':'☰'});navlinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navlinks.classList.remove('open');mobileToggle.setAttribute('aria-expanded','false');mobileToggle.textContent='☰'}));
+const waModal=document.getElementById('waModal');const message='Hallo DEYNAU, ich interessiere mich für Ihre Dienstleistungen. Könnten Sie mich bitte kontaktieren?';document.getElementById('waOne').href='https://wa.me/4917631322062?text='+encodeURIComponent(message);document.getElementById('waTwo').href='https://wa.me/4917670866895?text='+encodeURIComponent(message);document.querySelectorAll('[data-whatsapp]').forEach(b=>b.addEventListener('click',()=>{waModal.classList.add('open');document.getElementById('modalClose').focus()}));function closeModal(){waModal.classList.remove('open')}document.getElementById('modalClose').addEventListener('click',closeModal);waModal.addEventListener('click',e=>{if(e.target===waModal)closeModal()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});try{const saved=sessionStorage.getItem('deynau-lang');if(saved&&translations[saved])setLanguage(saved)}catch(e){}
 </script>
-
-</body>
-</html>
+</body></html>
