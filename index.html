@@ -4,189 +4,386 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="DEYNAU Dienstleistungen – Gebäudeservice, Umzug und Transport in Deutschland.">
-  <title>DEYNAU Dienstleistungen | Gebäudeservice & Transport</title>
+  <meta name="description" content="DEYNAU – Umzug, Transport und Gebäudeservice in Deutschland.">
+  <title>DEYNAU | Umzug, Transport & Gebäudeservice</title>
   <style>
     :root {
-      --blue: #123b70;
-      --orange: #f58220;
-      --light: #f4f7fb;
-      --dark: #172337;
+      --orange: #f47721;
+      --blue: #1769aa;
+      --dark: #172638;
+      --light: #f5f7fa;
+      --white: #ffffff;
     }
+
     * { box-sizing: border-box; }
+
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
       color: var(--dark);
+      background: var(--white);
       line-height: 1.6;
     }
+
     header {
-      background: white;
-      padding: 18px 7%;
+      background: var(--white);
+      padding: 18px 6%;
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
       gap: 16px;
       flex-wrap: wrap;
-      border-bottom: 1px solid #e8edf3;
+      border-bottom: 1px solid #e5eaf0;
     }
-    .logo { font-size: 28px; font-weight: 900; color: var(--blue); }
+
+    .logo {
+      font-size: 30px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      color: var(--dark);
+    }
+
     .logo span { color: var(--orange); }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
     nav a {
       color: var(--dark);
       text-decoration: none;
-      margin: 0 8px;
+      font-weight: 700;
+    }
+
+    .languages {
+      display: flex;
+      gap: 6px;
+    }
+
+    .languages button {
+      padding: 7px 10px;
+      border: 1px solid #d7dee7;
+      background: white;
+      border-radius: 6px;
+      cursor: pointer;
       font-weight: bold;
     }
-    select, .contact-button {
-      padding: 10px 14px;
-      border-radius: 8px;
-      border: 1px solid #d8e0ea;
-      font-size: 15px;
+
+    .languages button:hover {
+      background: var(--light);
     }
+
     .hero {
-      padding: 85px 7%;
-      color: white;
-      background: linear-gradient(115deg, #123b70, #205b91);
+      padding: 76px 6%;
+      background: linear-gradient(120deg, #fff3e9, #ffffff 65%);
     }
-    .hero h1 { font-size: clamp(34px, 5vw, 58px); line-height: 1.1; max-width: 800px; }
-    .hero p { max-width: 650px; font-size: 19px; }
-    .accent { color: #ffad62; }
-    .button {
+
+    .hero-content {
+      max-width: 1050px;
+      margin: auto;
+    }
+
+    .eyebrow {
+      color: var(--orange);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      max-width: 800px;
+      font-size: clamp(36px, 6vw, 64px);
+      line-height: 1.1;
+      margin: 14px 0 22px;
+    }
+
+    h1 span { color: var(--orange); }
+
+    .hero p {
+      max-width: 700px;
+      font-size: 19px;
+      color: #526174;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
+    .btn {
       display: inline-block;
+      padding: 13px 22px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: 800;
+    }
+
+    .btn-orange {
       background: var(--orange);
       color: white;
-      padding: 13px 22px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 14px;
     }
-    section { padding: 60px 7%; }
-    h2 { color: var(--blue); font-size: 32px; }
-    .services { display: grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap: 22px; }
+
+    .btn-blue {
+      background: var(--blue);
+      color: white;
+    }
+
+    section {
+      padding: 64px 6%;
+    }
+
+    .section-inner {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-heading {
+      font-size: clamp(28px, 4vw, 40px);
+      margin: 0 0 10px;
+    }
+
+    .section-intro {
+      color: #596879;
+      margin-bottom: 30px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+      margin-top: 30px;
+    }
+
     .service {
-      background: var(--light);
-      padding: 26px;
+      padding: 30px;
       border-radius: 14px;
-      border-top: 5px solid var(--orange);
+      background: var(--white);
+      box-shadow: 0 6px 28px #14263a12;
+      border: 1px solid #e7ebf0;
     }
-    .service h3 { color: var(--blue); }
-    .contact { background: #edf3fa; }
-    footer { background: #102b4d; color: white; padding: 24px 7%; text-align: center; }
-    a { overflow-wrap: anywhere; }
-    @media(max-width:600px) {
+
+    .service.transport { border-top: 6px solid var(--orange); }
+    .service.cleaning { border-top: 6px solid var(--blue); }
+
+    .service-icon {
+      font-size: 38px;
+    }
+
+    .service h3 {
+      font-size: 25px;
+      margin: 10px 0;
+    }
+
+    .service.transport h3 { color: var(--orange); }
+    .service.cleaning h3 { color: var(--blue); }
+
+    .contact {
+      background: var(--light);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .contact-card {
+      padding: 22px;
+      background: white;
+      border-radius: 10px;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-card h3 { margin-top: 0; }
+
+    .contact-card a {
+      color: var(--blue);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      padding: 28px 6%;
+      text-align: center;
+    }
+
+    footer a {
+      color: white;
+      margin: 0 8px;
+    }
+
+    @media (max-width: 600px) {
       header { padding: 16px 5%; }
-      nav { width: 100%; }
-      nav a { margin: 0 10px 0 0; }
-      .hero { padding: 60px 6%; }
-      section { padding: 42px 6%; }
+      .hero { padding: 55px 5%; }
+      section { padding: 48px 5%; }
+      nav { gap: 12px; }
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo">DEYNAU<span>.</span></div>
-    <nav>
-      <a href="#services" data-i="services">Leistungen</a>
-      <a href="#about" data-i="about">Über uns</a>
-      <a href="#contact" data-i="contact">Kontakt</a>
-    </nav>
-    <select id="language" aria-label="Sprache auswählen">
-      <option value="de">Deutsch</option>
-      <option value="tr">Türkçe</option>
-      <option value="en">English</option>
-    </select>
-  </header>
 
-  <main>
-    <div class="hero">
-      <h1 data-i="headline">Zuverlässiger Service.<br><span class="accent">Starker Transport.</span></h1>
-      <p data-i="intro">DEYNAU ist Ihr Ansprechpartner für Gebäudeservice, Umzug und Transport. Zuverlässig, sorgfältig und professionell.</p>
-      <a href="#contact" class="button" data-i="cta">Jetzt Kontakt aufnehmen</a>
+<header>
+  <div class="logo">DEYNAU<span>.</span></div>
+  <nav>
+    <a href="#services" data-de="Leistungen" data-tr="Hizmetler" data-en="Services">Leistungen</a>
+    <a href="#contact" data-de="Kontakt" data-tr="İletişim" data-en="Contact">Kontakt</a>
+    <div class="languages">
+      <button type="button" onclick="setLanguage('de')">DE</button>
+      <button type="button" onclick="setLanguage('tr')">TR</button>
+      <button type="button" onclick="setLanguage('en')">EN</button>
     </div>
+  </nav>
+</header>
 
-    <section id="services">
-      <h2 data-i="servicesTitle">Unsere Leistungen</h2>
+<main>
+  <section class="hero">
+    <div class="hero-content">
+      <div class="eyebrow" data-de="Zuverlässig. Flexibel. Professionell."
+           data-tr="Güvenilir. Esnek. Profesyonel."
+           data-en="Reliable. Flexible. Professional.">
+        Zuverlässig. Flexibel. Professionell.
+      </div>
+      <h1 data-de-html="Ihr Partner für <span>Umzug & Transport</span>"
+           data-tr-html="<span>Taşınma ve Nakliye</span> için güvenilir çözüm ortağınız"
+           data-en-html="Your partner for <span>Moving & Transport</span>">
+        Ihr Partner für <span>Umzug & Transport</span>
+      </h1>
+      <p data-de="DEYNAU unterstützt Sie mit Transportlösungen und zuverlässigem Gebäudeservice. Kontaktieren Sie uns für Ihre Anfrage."
+         data-tr="DEYNAU, nakliye çözümleri ve güvenilir bina hizmetleriyle yanınızda. Talepleriniz için bizimle iletişime geçin."
+         data-en="DEYNAU supports you with transport solutions and reliable building services. Contact us for your enquiry.">
+        DEYNAU unterstützt Sie mit Transportlösungen und zuverlässigem Gebäudeservice. Kontaktieren Sie uns für Ihre Anfrage.
+      </p>
+      <div class="buttons">
+        <a class="btn btn-orange" href="#contact"
+           data-de="Transport anfragen" data-tr="Nakliye için iletişim" data-en="Request transport">
+          Transport anfragen
+        </a>
+        <a class="btn btn-blue" href="#services"
+           data-de="Unsere Leistungen" data-tr="Hizmetlerimiz" data-en="Our services">
+          Unsere Leistungen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="section-inner">
+      <h2 class="section-heading" data-de="Unsere Leistungen" data-tr="Hizmetlerimiz" data-en="Our Services">
+        Unsere Leistungen
+      </h2>
+      <p class="section-intro"
+         data-de="Praktische Lösungen für Privat- und Geschäftskunden."
+         data-tr="Bireysel ve kurumsal müşteriler için pratik çözümler."
+         data-en="Practical solutions for private and business customers.">
+        Praktische Lösungen für Privat- und Geschäftskunden.
+      </p>
+
       <div class="services">
-        <article class="service">
-          <h3 data-i="cleanTitle">🧹 Gebäudeservice</h3>
-          <p data-i="cleanText">Reinigungs- und Gebäudeservice nach individueller Absprache.</p>
+        <article class="service transport">
+          <div class="service-icon">🚚</div>
+          <h3 data-de="Umzug & Transport" data-tr="Taşınma ve Nakliye" data-en="Moving & Transport">
+            Umzug & Transport
+          </h3>
+          <p data-de="Transportlösungen für Ihre Anforderungen. Sprechen Sie mit uns über Ihren Auftrag und den gewünschten Termin."
+             data-tr="İhtiyaçlarınıza uygun nakliye çözümleri. İşinizi ve istediğiniz tarihi görüşmek için bizimle iletişime geçin."
+             data-en="Transport solutions tailored to your needs. Contact us to discuss your job and preferred date.">
+            Transportlösungen für Ihre Anforderungen. Sprechen Sie mit uns über Ihren Auftrag und den gewünschten Termin.
+          </p>
+          <a class="btn btn-orange" href="https://wa.me/4917631322062"
+             data-de="Jetzt anfragen" data-tr="Şimdi bilgi alın" data-en="Enquire now">
+            Jetzt anfragen
+          </a>
         </article>
-        <article class="service">
-          <h3 data-i="transportTitle">🚚 Umzug & Transport</h3>
-          <p data-i="transportText">Transport- und Umzugsleistungen für Ihre Anforderungen. Fragen Sie uns nach einem Angebot.</p>
+
+        <article class="service cleaning">
+          <div class="service-icon">🧹</div>
+          <h3 data-de="Gebäudeservice" data-tr="Bina ve Temizlik Hizmetleri" data-en="Building Services">
+            Gebäudeservice
+          </h3>
+          <p data-de="Zuverlässige Unterstützung rund um die Gebäudepflege. Kontaktieren Sie uns für weitere Informationen."
+             data-tr="Bina bakımı ve temizlik hizmetlerinde güvenilir destek. Ayrıntılı bilgi için bize ulaşın."
+             data-en="Reliable support for building care and cleaning. Contact us for more information.">
+            Zuverlässige Unterstützung rund um die Gebäudepflege. Kontaktieren Sie uns für weitere Informationen.
+          </p>
+          <a class="btn btn-blue" href="https://wa.me/4917670866895"
+             data-de="Kontakt aufnehmen" data-tr="İletişime geçin" data-en="Contact us">
+            Kontakt aufnehmen
+          </a>
         </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="about">
-      <h2 data-i="aboutTitle">DEYNAU – Ihr zuverlässiger Partner</h2>
-      <p data-i="aboutText">Wir legen Wert auf zuverlässige Kommunikation, sorgfältige Arbeit und einen professionellen Service.</p>
-    </section>
+  <section class="contact" id="contact">
+    <div class="section-inner">
+      <h2 class="section-heading" data-de="Kontaktieren Sie uns" data-tr="Bizimle iletişime geçin" data-en="Contact Us">
+        Kontaktieren Sie uns
+      </h2>
+      <p class="section-intro"
+         data-de="Wir freuen uns auf Ihre Nachricht."
+         data-tr="Mesajınızı bekliyoruz."
+         data-en="We look forward to hearing from you.">
+        Wir freuen uns auf Ihre Nachricht.
+      </p>
 
-    <section id="contact" class="contact">
-      <h2 data-i="contactTitle">Kontaktieren Sie uns</h2>
-      <p data-i="contactText">Sie möchten ein Angebot erhalten? Schreiben Sie uns oder rufen Sie uns an.</p>
-      <p><strong>E-Mail:</strong> <a id="emailLink" href="mailto:IHRE-EMAIL">IHRE-EMAIL</a></p>
-      <p><strong>Telefon / WhatsApp:</strong> <a id="phoneLink" href="https://wa.me/491234567890">+49 123 4567890</a></p>
-      <p data-i="replaceNote">Bitte ersetzen Sie die Beispiel-Kontaktdaten vor der Veröffentlichung durch Ihre echten Angaben.</p>
-    </section>
-  </main>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>📞 <span data-de="Telefon" data-tr="Telefon" data-en="Phone">Telefon</span></h3>
+          <p><a href="tel:+4917631322062">+49 176 31322062</a></p>
+          <p><a href="tel:+4917670866895">+49 176 70866895</a></p>
+        </div>
 
-  <footer>© <span id="year"></span> DEYNAU Dienstleistungen</footer>
+        <div class="contact-card">
+          <h3>💬 WhatsApp</h3>
+          <p><a href="https://wa.me/4917631322062">+49 176 31322062</a></p>
+          <p><a href="https://wa.me/4917670866895">+49 176 70866895</a></p>
+        </div>
 
-  <script>
-    const translations = {
-      de: {
-        services:"Leistungen",about:"Über uns",contact:"Kontakt",
-        headline:'Zuverlässiger Service.<br><span class="accent">Starker Transport.</span>',
-        intro:"DEYNAU ist Ihr Ansprechpartner für Gebäudeservice, Umzug und Transport. Zuverlässig, sorgfältig und professionell.",
-        cta:"Jetzt Kontakt aufnehmen",servicesTitle:"Unsere Leistungen",
-        cleanTitle:"🧹 Gebäudeservice",cleanText:"Reinigungs- und Gebäudeservice nach individueller Absprache.",
-        transportTitle:"🚚 Umzug & Transport",transportText:"Transport- und Umzugsleistungen für Ihre Anforderungen. Fragen Sie uns nach einem Angebot.",
-        aboutTitle:"DEYNAU – Ihr zuverlässiger Partner",
-        aboutText:"Wir legen Wert auf zuverlässige Kommunikation, sorgfältige Arbeit und einen professionellen Service.",
-        contactTitle:"Kontaktieren Sie uns",
-        contactText:"Sie möchten ein Angebot erhalten? Schreiben Sie uns oder rufen Sie uns an.",
-        replaceNote:"Bitte ersetzen Sie die Beispiel-Kontaktdaten vor der Veröffentlichung durch Ihre echten Angaben."
-      },
-      tr: {
-        services:"Hizmetler",about:"Hakkımızda",contact:"İletişim",
-        headline:'Güvenilir hizmet.<br><span class="accent">Güçlü taşımacılık.</span>',
-        intro:"DEYNAU; bina ve temizlik hizmetleri, taşınma ve nakliye alanlarında hizmet sunar. Güvenilir, özenli ve profesyonel.",
-        cta:"Bizimle iletişime geçin",servicesTitle:"Hizmetlerimiz",
-        cleanTitle:"🧹 Bina ve Temizlik Hizmetleri",cleanText:"İhtiyacınıza göre temizlik ve bina hizmetleri.",
-        transportTitle:"🚚 Taşınma ve Nakliye",transportText:"İhtiyacınıza uygun taşınma ve nakliye hizmetleri. Teklif almak için bize ulaşın.",
-        aboutTitle:"DEYNAU – Güvenilir çözüm ortağınız",
-        aboutText:"Güvenilir iletişime, özenli çalışmaya ve profesyonel hizmete önem veriyoruz.",
-        contactTitle:"İletişim",contactText:"Teklif almak ister misiniz? Bize yazın veya telefon edin.",
-        replaceNote:"Yayınlamadan önce örnek iletişim bilgilerini kendi bilgilerinizle değiştirin."
-      },
-      en: {
-        services:"Services",about:"About us",contact:"Contact",
-        headline:'Reliable service.<br><span class="accent">Powerful transport.</span>',
-        intro:"DEYNAU provides building services, cleaning, moving and transport solutions with care and professionalism.",
-        cta:"Contact us",servicesTitle:"Our services",
-        cleanTitle:"🧹 Building & Cleaning Services",cleanText:"Cleaning and building services tailored to your needs.",
-        transportTitle:"🚚 Moving & Transport",transportText:"Moving and transport services tailored to your requirements. Contact us for a quote.",
-        aboutTitle:"DEYNAU – Your reliable partner",
-        aboutText:"We value clear communication, careful work and professional service.",
-        contactTitle:"Contact us",contactText:"Would you like a quote? Send us a message or call us.",
-        replaceNote:"Replace the sample contact details with your real information before publishing."
-      }
-    };
-    const languageSelect = document.getElementById("language");
-    function setLanguage(lang) {
-      document.documentElement.lang = lang;
-      document.querySelectorAll("[data-i]").forEach(el => {
-        const key = el.dataset.i;
-        if (translations[lang][key]) el.innerHTML = translations[lang][key];
-      });
-    }
-    languageSelect.addEventListener("change", e => setLanguage(e.target.value));
-    document.getElementById("year").textContent = new Date().getFullYear();
-    setLanguage("de");
-  </script>
+        <div class="contact-card">
+          <h3>✉️ <span data-de="E-Mail" data-tr="E-posta" data-en="Email">E-Mail</span></h3>
+          <p><a href="mailto:deynau.services@gmail.com">deynau.services@gmail.com</a></p>
+        </div>
+
+        <div class="contact-card">
+          <h3>🌐 Social Media</h3>
+          <p><a href="https://www.facebook.com/profile.php?id=61595942998696" target="_blank" rel="noopener noreferrer">Facebook</a></p>
+          <p><a href="https://www.instagram.com/deynau.service/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div><strong>DEYNAU</strong> — Umzug, Transport & Gebäudeservice</div>
+  <p>© <span id="year"></span> DEYNAU. <span data-de="Alle Rechte vorbehalten." data-tr="Tüm hakları saklıdır." data-en="All rights reserved.">Alle Rechte vorbehalten.</span></p>
+  <a href="https://www.facebook.com/profile.php?id=61595942998696" target="_blank" rel="noopener noreferrer">Facebook</a>
+  <a href="https://www.instagram.com/deynau.service/" target="_blank" rel="noopener noreferrer">Instagram</a>
+</footer>
+
+<script>
+  function setLanguage(language) {
+    document.documentElement.lang = language;
+
+    document.querySelectorAll('[data-' + language + ']').forEach(function (element) {
+      element.textContent = element.getAttribute('data-' + language);
+    });
+
+    document.querySelectorAll('[data-' + language + '-html]').forEach(function (element) {
+      element.innerHTML = element.getAttribute('data-' + language + '-html');
+    });
+  }
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
